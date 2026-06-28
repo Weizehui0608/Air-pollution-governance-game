@@ -81,12 +81,10 @@ six provinces.
 
 <!-- TODO (author): replace the placeholders below with the exact sources and access dates. -->
 
-- **Air quality (AQI, PM2.5):** 〈e.g., China National Environmental Monitoring Centre (CNEMC) /
-  national real-time air-quality release platform〉. Accessed 〈date〉.
-- **Meteorology (Temperature, Pressure, WindSpeed, Precipitation):** 〈e.g., China Meteorological
-  Administration / NOAA station data〉. Accessed 〈date〉.
-- **Policy dates (`Policy_Month`):** official announcements of the central environmental
-  protection inspection batches, 〈source / official document〉.
+- **Air quality (AQI, PM2.5):** 〈China National Environmental Monitoring Centre (CNEMC) /
+  national real-time air-quality release platform〉.
+- **Meteorology (Temperature, Pressure, WindSpeed, Precipitation):** 〈China Meteorological
+  Administration / NOAA station data〉.
 
 Monthly values were aggregated from the raw 〈daily/hourly〉 records by 〈arithmetic mean〉.
 
