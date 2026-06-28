@@ -1,9 +1,7 @@
 # Campaign-and-Relapse in Air Pollution Governance — Data
 
-Empirical data accompanying the paper:
-
 > **Campaign-and-Relapse in Air Pollution Governance: A Tripartite Evolutionary Game with Environmental Feedback and Central-Inspection Forcing**
-> Renkang Xiang, Juan Wei. *Systems* (MDPI), 2025. <!-- update volume/pages/DOI on acceptance -->
+>  Juan Wei, Renkang Xiang. *Systems* 
 
 This repository provides the monthly air-quality panel for the Beijing–Tianjin–Hebei
 **"2+26" cities (2014–2024)** that motivates and disciplines the model in the paper
@@ -19,10 +17,6 @@ difference-in-differences design used in the supporting empirical analysis.
 | `Module_A_2Plus26_Month_Panel_Fixed.csv` | 3,552 | 5 | Core air-quality panel (city × month) |
 | `Module_AB_Panel_Final.csv` | 3,552 | 9 | Core panel **+** meteorological controls |
 | `Module_ABD_Panel_Empirical_Ready.csv` | 3,552 | 12 | Core + meteorology **+** policy / DiD design |
-
-The three files are **cumulative**: `AB` adds four meteorological columns to `A`, and `ABD`
-adds three policy columns to `AB`. For most purposes `Module_ABD_Panel_Empirical_Ready.csv`
-is the single file you need; the others are kept for transparency about how the panel was built.
 
 ---
 
@@ -97,45 +91,3 @@ six provinces.
 Monthly values were aggregated from the raw 〈daily/hourly〉 records by 〈arithmetic mean〉.
 
 ---
-
-## Notes and known limitations
-
-- **Meteorological coverage is partial.** `Temperature`, `Pressure`, and `WindSpeed` are
-  available for roughly one-third of city-months (1,279 of 3,552); the remaining rows are blank.
-- **`Precipitation` is currently empty** for all rows. <!-- TODO (author): populate or remove this column before release. -->
-- `n_t` is derived from `PM2.5` only and is intended as a normalized state variable for the
-  model, not as a substitute for the raw AQI/PM2.5 series.
-- The panel is **unbalanced** at the very start (coverage begins 2014-05).
-- In the paper, this panel is used as **empirical motivation and qualitative context**, not as a
-  target for forced quantitative calibration (see Section 5.4).
-
----
-
-## How to cite
-
-If you use these data, please cite the paper:
-
-```bibtex
-@article{XiangWei2025CampaignRelapse,
-  title   = {Campaign-and-Relapse in Air Pollution Governance: A Tripartite Evolutionary
-             Game with Environmental Feedback and Central-Inspection Forcing},
-  author  = {Xiang, Renkang and Wei, Juan},
-  journal = {Systems},
-  year    = {2025},
-  volume  = {},  % update on publication
-  number  = {},
-  pages   = {},
-  doi     = {}
-}
-```
-
----
-
-## License
-
-Released under 〈CC BY 4.0 / MIT〉. <!-- choose one; CC BY 4.0 is common for data -->
-
-## Contact
-
-Corresponding author: Juan Wei — 〈email〉, School of Marxism, Guangdong Ocean University,
-Zhanjiang 524000, China.
